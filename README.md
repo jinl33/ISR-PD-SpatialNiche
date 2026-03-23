@@ -3,7 +3,7 @@
 A high-throughput analytical pipeline to map the **Integrated Stress Response (ISR)** and localized neuroinflammatory niches in the Parkinsonian Substantia Nigra.
 
 ## Project Foundation
-This project expands upon **Jiang et al. (2025)** by shifting from marker-gene identification to **spatial architecture modeling**. We investigate how activated microglia physically interact with dopaminergic neurons to facilitate disease progression.
+This project expands upon **[Jiang et al. (2025)](https://doi.org/10.2147/JIR.S521744)** by shifting from marker-gene identification to **spatial architecture modeling**. We investigate how activated microglia physically interact with dopaminergic neurons to facilitate disease progression.
 
 * **Hypothesis:** High-ISR microglia exhibit specific ligand-receptor interactions that correlate with localized inflammatory hotspots surrounding neurons.
 * **Gene Signature:** We quantify stress using the **129-gene ISR signature (Han et al., 2023; Ref #40 in Jiang et al. (2025))**, a comprehensive record of $eIF2\alpha$-mediated genes verified in human CNS tissue.
