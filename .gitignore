@@ -1,0 +1,8 @@
+data/
+results/
+.nextflow/
+work/
+.DS_Store
+*.gz
+*.rds
+*.h5ad
