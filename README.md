@@ -109,5 +109,3 @@ git checkout -b feature/your-task-name
 git commit -m "Brief description of update"
 git push
 ```
-
-Open a Pull Request (PR) for review after pushing your branch.
