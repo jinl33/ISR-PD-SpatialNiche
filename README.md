@@ -32,7 +32,7 @@ A utility script is provided in `scripts/fetch_data.sh`.
 ```bash
 #!/bin/bash
 # scripts/fetch_data.sh
-mkdir -p data/raw/scrna_data/raw/spatial
+mkdir -p data/raw/scrna data/raw/spatial
 
 # Fetch scRNA-seq (GSE202210)
 curl -O "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE202nnn/GSE202210/suppl/GSE202210_RAW.tar"
