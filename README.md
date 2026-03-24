@@ -5,6 +5,8 @@ A high-throughput analytical pipeline to map the **Integrated Stress Response (I
 ## Project Foundation
 This project expands upon **[Jiang et al. (2025)](https://doi.org/10.2147/JIR.S521744)** by shifting from marker-gene identification to **spatial architecture modeling**. We investigate how activated microglia physically interact with dopaminergic neurons to facilitate disease progression.
 
+We utilize the matched multi-modal atlas from **[Ma et al. (2025)](https://doi.org/10.1038/s41467-025-62478-3)** as our primary data resource.
+
 * **Hypothesis:** High-ISR microglia exhibit specific ligand-receptor interactions that correlate with localized inflammatory hotspots surrounding neurons.
 * **Gene Signature:** We quantify stress using the **129-gene ISR signature (Han et al., 2023; Ref #40 in Jiang et al. (2025))**, a comprehensive record of $eIF2\alpha$-mediated genes verified in human CNS tissue.
 
@@ -92,13 +94,11 @@ conda activate venv
 ```text
 pd-isr-niche/
 ├── data/
-│   ├── raw/           # Original GEO supplementary downloads (Git ignored)
+│   ├── raw/           # Original GEO downloads
 │   └── processed/     # Harmony-corrected Seurat/Scanpy objects
-├── envs/              # environment.yml
-├── notebooks/         # Author-specific exploratory analysis (EDA)
 ├── pipelines/         # Nextflow workflow logic (.nf)
-├── scripts/           # Modular R/Python helper scripts
-└── results/           # Figures and signaling tables
+├── scripts/           # fetch script and helper modules
+└── results/           # Spatial niche maps and signaling tables
 ```
 
 ### 3. Git Workflow
