@@ -15,7 +15,7 @@ We prioritize anatomical relevance by focusing on the **human Substantia Nigra (
 
 | Dataset | Modality | Platform | Resolution | Observations |
 | :--- | :--- | :--- | :--- | :--- |
-| **GSE202210** | scRNA-seq | Illumina | N/A | ~60k cells (12 samples) |
+| **GSE202210** | snRNA-seq | 10x Genomics Chromium | single nucleus | ~207k nuclei (28 donors) |
 | **GSE253975** | Spatial transcriptomics | 10x Genomics Xenium In Situ + 10x Genomics Visium | Subcellular + $55~\mu m$ | 10 PD and 8 control donors |
 
 ---
@@ -32,11 +32,11 @@ A utility script is provided in `scripts/fetch_data.sh`.
 ```bash
 #!/bin/bash
 # scripts/fetch_data.sh
-mkdir -p data/raw/scrna data/raw/spatial
+mkdir -p data/raw/snrna_ref data/raw/spatial
 
-# Fetch scRNA-seq (GSE202210)
-curl -O "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE202nnn/GSE202210/suppl/GSE202210_RAW.tar"
-tar -xvf GSE202210_RAW.tar -C data/raw/scrna/
+# Fetch snRNA-seq (GSE253462)
+curl -O "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE253nnn/GSE253462/suppl/GSE253462_RAW.tar"
+tar -xvf GSE253462.tar -C data/raw/snrna_ref/
 
 # Fetch Spatial Transcriptomics (GSE253975)
 curl -O "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE253nnn/GSE253975/suppl/GSE253975_RAW.tar"
